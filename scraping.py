@@ -9,7 +9,7 @@ soup = BeautifulSoup(r.text, 'html.parser')
 messages = soup.find_all('div', {'class': 'im_message_body'})
 
 csv = open('messages.csv', 'wb')
-csv.write('author,emojis')
+csv.write('author,emojis\n')
 for message in messages:
     author = message.find('a', {'class': 'im_message_author'}).get_text()
     text = message.find('div', {'class': 'im_message_text'}).get_text()
@@ -18,5 +18,6 @@ for message in messages:
         emojis = ','.join(match)
     except:
         emojis = ''
-    csv.write(author.encode('utf-8')+',"'+emojis+'"\n')
+    if emojis:
+        csv.write(author.encode('utf-8')+',"'+emojis+'"\n')
 csv.close()

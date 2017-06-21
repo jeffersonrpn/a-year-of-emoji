@@ -3,12 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <script src="https://cdn.jsdelivr.net/emojione/3.0.3/lib/js/emojione.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/3.0.3/extras/css/emojione.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
   <title>A year of emoji</title>
+  <style>
+    body {
+      background: #ecf0f1;
+      margin: 0;
+      padding: 0;
+    }
+    .emoji {
+      float: left;
+      width: 16px;
+      height: 16px;
+      padding: 2px;
+    }
+    .emoji > img {
+      width: 100%;
+      height: 100%;
+    }
+    .B {
+      border-top: solid 4px #8e44ad;
+      background-color: rgba(142, 68, 173, 0.5);
+    }
+    .J {
+      border-top: solid 4px #16a085;
+      background-color: rgba(22, 160, 133, 0.5);
+    }
+  </style>
 </head>
 <body>
-
+  <div id="emojis"></div>
   <script src="script.js"></script>
 </body>
 </html>

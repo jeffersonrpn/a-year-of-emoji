@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <script src="https://cdn.jsdelivr.net/emojione/3.0.3/lib/js/emojione.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Damion|Quicksand" rel="stylesheet">
   <title>A year of emoji</title>
   <style>
     body {
-      background: #ecf0f1;
+      background: #E0D3C7;
       margin: 0;
       padding: 0;
+      font-family: 'Quicksand', sans-serif;
     }
     h1 {
       font-family: 'Damion', cursive;
@@ -18,11 +19,15 @@
       font-size: 6em;
       font-weight: normal;
     }
+    #emojis {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
     .emoji {
       float: left;
-      width: 16px;
-      height: 16px;
-      padding: 2px;
+      width: 24px;
+      height: 24px;
+      padding: 4px;
     }
     .emoji > img {
       width: 100%;
@@ -37,8 +42,20 @@
       background-color: rgba(22, 160, 133, 0.5);
     }
     .month {
-      display: block;
       clear: both;
+      float: left;
+      padding: 30px;
+      background-color: #f4f4f4;
+      margin-bottom: 50px;
+      border-bottom: solid 5px #828282;
+    }
+    .month-title {
+      font-size: 2em;
+      margin-bottom: 30px;
+      display: flex;
+    }
+    .month-year {
+      width: 200px;
     }
   </style>
 </head>

@@ -10,5 +10,5 @@ messages = soup.find_all('div', {'class': 'im_history_message_wrap'})
 
 html = open('messages.html', 'wb')
 for message in messages:
-    html.write(message)
+    html.write(str(message))
 html.close()

@@ -22,6 +22,7 @@
     #emojis {
       margin-left: 50px;
       margin-right: 50px;
+      margin-bottom: 100px;
     }
     .emoji {
       float: left;
@@ -57,11 +58,21 @@
     .month-year {
       width: 200px;
     }
+    .madeby {
+      line-height: 24px;
+      text-align: center;
+    }
+    .madeby > img {
+      width: 18px;
+      height: 18px;
+    }
   </style>
 </head>
 <body>
   <h1>A Year of Emoji</h1>
   <div id="emojis"></div>
+  <br style="clear: both;">
+  <div class="madeby">Made with <img class="emojione" alt="❤️" title=":heart:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/2764.png"> by Jeff</div>
   <script src="script.js"></script>
 </body>
 </html>

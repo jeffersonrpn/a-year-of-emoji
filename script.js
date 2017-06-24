@@ -5,7 +5,7 @@ var parseTime = d3.timeParse("%A, %B %e, %Y");
 var formatTime = d3.timeFormat("%B");
 
 var currentMonth = "";
-d3.csv("messages.csv", function(data) {
+d3.csv("m.csv", function(data) {
   data.forEach(function(message) {
     var author = (message.author).substring(0, 1);
     var date = parseTime(message.date);

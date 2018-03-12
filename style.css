@@ -1,0 +1,79 @@
+body {
+  background: #E0D3C7;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #4e4a47;
+}
+h1 {
+  font-family: 'Damion', cursive;
+  text-align: center;
+  font-size: 6em;
+  font-weight: normal;
+}
+#emojis {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+.emoji-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.emoji {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+.emoji > img {
+  width: 100%;
+  height: 100%;
+}
+.B {
+  border-top: solid 4px #8e44ad;
+  background-color: rgba(142, 68, 173, 0.5);
+}
+.J {
+  border-top: solid 4px #16a085;
+  background-color: rgba(22, 160, 133, 0.5);
+}
+.month {
+  padding: 30px;
+  background-color: #f4f4f4;
+  margin-bottom: 50px;
+  border-bottom: solid 5px #828282;
+}
+.month-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+  display: flex;
+}
+.month-year {
+  width: 100px;
+}
+.madeby {
+  line-height: 24px;
+  text-align: center;
+}
+.madeby > img {
+  width: 18px;
+  height: 18px;
+}
+nav {
+  text-align: center;
+  margin-bottom: 50px;
+}
+nav > a {
+  padding: 15px;
+  font-size: 1.5em;
+  color: #4e4a47;
+}
+nav > a:link,
+nav > a:visited {
+  text-decoration: none;
+}
+nav > a:active,
+nav > a:hover,
+nav > a.active {
+  border-bottom: solid 4px #8e44ad;
+}

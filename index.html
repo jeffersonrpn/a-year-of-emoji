@@ -24,8 +24,11 @@
       margin-right: 50px;
       margin-bottom: 100px;
     }
+    .emoji-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .emoji {
-      float: left;
       width: 24px;
       height: 24px;
       padding: 4px;
@@ -43,8 +46,6 @@
       background-color: rgba(22, 160, 133, 0.5);
     }
     .month {
-      clear: both;
-      float: left;
       padding: 30px;
       background-color: #f4f4f4;
       margin-bottom: 50px;
@@ -56,7 +57,7 @@
       display: flex;
     }
     .month-year {
-      width: 200px;
+      width: 100px;
     }
     .madeby {
       line-height: 24px;
@@ -71,8 +72,7 @@
 <body>
   <h1>A Year of Emoji</h1>
   <div id="emojis"></div>
-  <br style="clear: both;">
-  <div class="madeby">Made with <img class="emojione" alt="❤️" title=":heart:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/2764.png"> by Jeff</div>
+  <div class="madeby">Made with <img class="emojione" alt="❤️" title=":heart:" src="https://cdn.jsdelivr.net/emojione/assets/3.0/png/32/2764.png"> by Jeff for Bruna</div>
   <script src="script.js"></script>
 </body>
 </html>

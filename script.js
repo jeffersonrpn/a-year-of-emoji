@@ -1,6 +1,7 @@
 var container = d3.select("#emojis");
 var monthContainer;
 var monthTitle;
+var emojiwrapper;
 var parseTime = d3.timeParse("%A, %B %e, %Y");
 var formatTime = d3.timeFormat("%B");
 
@@ -13,6 +14,7 @@ d3.csv("messages.csv", function(data) {
     if (month != currentMonth) {
       monthContainer  = container.append("div").attr("class", "month");
       monthTitle      = monthContainer.append("div").attr("class", "month-title");
+      emojiwrapper    = monthContainer.append("div").attr("class", "emoji-wrapper");
       monthTitle.append("div").attr("class", "month-year").text(d3.timeFormat("%Y")(date));
       monthTitle.append("div").attr("class", "month-name").text(month);
       currentMonth = month;
@@ -20,7 +22,7 @@ d3.csv("messages.csv", function(data) {
     emojis = message.emojis.split(',')
     for (var i = 0; i < emojis.length; i++) {
       var emoji = emojione.shortnameToImage(emojis[i]);
-      monthContainer.append("div")
+      emojiwrapper.append("div")
         .attr("class", "emoji "+author)
         .html(emoji);
     }

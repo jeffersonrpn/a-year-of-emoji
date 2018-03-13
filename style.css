@@ -11,6 +11,27 @@ h1 {
   font-size: 6em;
   font-weight: normal;
 }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 #emojis {
   margin-left: 50px;
   margin-right: 50px;
@@ -76,4 +97,8 @@ nav > a:active,
 nav > a:hover,
 nav > a.active {
   border-bottom: solid 4px #8e44ad;
+}
+.domain,
+line {
+  display: none;
 }
